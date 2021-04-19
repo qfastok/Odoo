@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+    <record id="action_openacademy" model="ir.actions.act_window">
+        <field name="name">OpenAcademy</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">openacademy.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create an OpenAcademy course!
+            </p>
+        </field>
+    </record>
+    <menuitem id="openacademy_root" name="OpenAcademy" sequence="0"/>
+    <menuitem id="openacademy_course" name="Course" parent="openacademy_root" action="action_openacademy"/>
+
+</odoo>

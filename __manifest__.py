@@ -22,13 +22,13 @@
 
     # any module necessary for this one to work correctly
     'depends':     ['base'],
-
+    'images':   ['static/description/icon.jpg'],
     # always loaded
     'data':        [
         'views/openacademy.xml',
         'templates.xml',
+        'openacademy.xml'
         # "security/ir.model.access.csv",
-        "data/openacademy_data.xml",
     ],
     # only loaded in demonstration mode
     'demo':        [],
